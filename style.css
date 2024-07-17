@@ -92,6 +92,7 @@ nav>ul>li{
     align-items: center;
     gap: .4vw;
 }
+
 .center{
     width: 40%;
     height: 100%;
@@ -108,6 +109,11 @@ nav>ul>li{
     width: 50%;
     height: 50%;
     background-color: yellowgreen; 
+}
+.l-left>video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .l-right{
     width: 50%;
@@ -226,61 +232,84 @@ nav>ul>li{
 .card-container3{
     width: 100%;
     height: 100%;
-    background-color: lawngreen;
+    /* background-color: lawngreen; */
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    /* opacity: 1; */
 }
 .card{
     width: 25%;
     height: 70%;
-    /* background-color: rebeccapurple; */
-    /* opacity: 0; */
 }
 .inner-card{
     width: 100%;
     height: 80%;
-    background-color: yellow;
+    /* background-color: yellow; */
 }
-
-
+.inner-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 .page4{
     width:100%;
     height: 100vh;
-    background-color: red;
+    /* background-color: red; */
 }
-.page4>.card-container4{
+.page4 .card-container4{
     width: 100%;
     height: 100%;
-    background-color: lawngreen;
-    position: relative;
+    /* background-color: lawngreen; */
     display: flex;
     justify-content: center;
     align-items: center;
-   
+    /* opacity: 1; */
+
+}
+.inner-card4{
+    width: 100%;
+    height: 80%;
+    /* background-color: yellow; */
+}
+.inner-card4 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .page5{
     width:100%;
     height: 100vh;
     background-color: rgb(206, 61, 61);
 }
-.page5>.card-container5{
+.page5 .card-container5{
     width: 100%;
     height: 100%;
-    background-color: lawngreen;
+    /* background-color: lawngreen; */
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-   
+    /* opacity: 1; */
+}
+.inner-card5{
+    width: 100%;
+    height: 80%;
+    background-color: yellow;
+
+}
+.inner-card5 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .page6{
     width:100%;
     height: 100vh;
-    background-color: rgb(55, 43, 103);
+    /* background-color: rgb(55, 43, 103); */
 }
-.page6>.card-container6{
+.page6 .card-container6{
     width: 100%;
     height: 100%;
     background-color: lawngreen;
@@ -288,12 +317,94 @@ nav>ul>li{
     display: flex;
     justify-content: center;
     align-items: center;
-
+    /* opacity: 1; */
 }
-
+.inner-card6{
+    width: 100%;
+    height: 80%;
+    background-color: yellow;
+}
+.inner-card6>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 /* ------- page7 --------- */
 .page7{
     width: 100%;
     height: 100vh;
     background-color: aquamarine;
+    overflow-x:auto ;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding-top: 4vw;
+    padding-left: 15vw;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.card-7{
+    width: 70vw;
+    height: 80vh;
+    background-color: rebeccapurple;
+    position: relative;
+    overflow:hidden;
+    display: inline-block;
+    margin-right: 20vw;
+}
+.card-7>video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:100%;
+    background-color: rgba(0, 0, 0, 0.59);
+    font-family: gilroy;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all ease-in .3s;
+}
+.overlay>h4{
+    font-size: 1.2vw;
+    color:white
+}
+.overlay>h4>span{
+    background: linear-gradient(45deg ,yellow,red,purple);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+
+}
+.overlay>h2{
+    color: white;
+    font-size: 3.3vw;
+    transition: all ease .3s;
+}
+.overlay>p{
+    width: 50%;
+    text-align: center;
+    color: white;
+    
+}
+.card-7:hover .overlay{
+    top:0%
+}
+.overlay>h2:hover{
+    background: linear-gradient(45deg ,pink,orange,purple);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+}
+
+
+/* page8 */
+.page8{
+    width: 0vw;
+    height: 100vh;
+    background-color: rebeccapurple;
 }

@@ -84,7 +84,9 @@ gsap.to('.page3',{
       scrub:3,
       pin:true
     },
-    rotate: "2deg"
+    rotate: "2deg",
+    // opacity:0
+
  })
 
  gsap.to('.page4',{
@@ -97,7 +99,9 @@ gsap.to('.page3',{
       scrub:3,
       pin:true
     },
-    rotate: "2deg"
+    rotate: "2deg",
+    // opacity:0
+
  })
 
  gsap.to('.page5',{
@@ -110,7 +114,8 @@ gsap.to('.page3',{
       scrub:3,
       pin:true
     },
-    rotate: "2deg"
+    rotate: "2deg",
+    // opacity:0
  })
 
  gsap.to('.page6',{
@@ -123,6 +128,24 @@ gsap.to('.page3',{
       scrub:3,
       pin:true
     },
-    rotate: "2deg"
+    rotate: "2deg",
+    // opacity:0
+
  })
 
+// page7
+
+gsap.to('.card-7',{
+  scrollTrigger:{
+    trigger:'.page7',
+    scroller:'main',
+    start:'top 0%',
+    end:'bottom 0%',
+    pin:true,
+    scrub:2
+  },
+  x:'-250%',
+  // width:'100%',
+  // height: '100%'
+
+})
